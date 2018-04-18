@@ -74,8 +74,10 @@ namespace Garage1
                         VehicleInput();
                         break;
                     case "2":
+                        VehicleUnpark();
                         break;
                     case "3":
+                        ListOfParkedCars();
                         break;
                     case "4":
                         break;
@@ -166,25 +168,25 @@ namespace Garage1
                 default:
                     break;
             }
-
-
+           
             garage.Add(vehicle);
-
-
-
-
-
-
-
-
+            
         }
 
+        public void VehicleUnpark()
+        {
+            Console.WriteLine("Enter the Registration Number");
+            garage.Remove(Console.ReadLine());
+        }
 
+        public void ListOfParkedCars()
+        {
+            foreach (Vehicle a in garage)
+            {
+                Console.WriteLine("this is parked Cars Number " + a.RegNumber + " Color: "+ a.Color + "  Numbers Of wheel = " + a.NrOfWheels);
+            }
 
-
-
-
-
+        }
 
 
     }
