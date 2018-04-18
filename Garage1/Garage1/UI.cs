@@ -49,6 +49,7 @@ namespace Garage1
         {
             Console.WriteLine("Enter The Garage Size");
             int MaxCapacity = int.Parse(Console.ReadLine());
+            
 
             garage = new Garage<Vehicle>(MaxCapacity);
 
