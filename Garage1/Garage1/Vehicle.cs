@@ -8,25 +8,24 @@ namespace Garage1
 {
     public class Vehicle
     {
-
-        public Vehicle(int regNumber , string color , string fuelType , int cylinderVolume , int noOfseat )
+        public Vehicle(string vehicleType, string regNumber, string color, int nrfWheels)
         {
-            RegNumber = regNumber;
-            Color = color;
-            FuelType = fuelType;
-            CylinderVolume = cylinderVolume;
-            NoOfSeat = noOfseat;
+        VehicleType = vehicleType;
+        RegNumber = regNumber;
+        Color = color;
+        NrOfWheels = nrfWheels; 
 
         }
 
-        public int RegNumber { get; set; }
-        public string Color { get; set; }
-        public string FuelType { get; set; }
-        public int CylinderVolume { get; set; }
-        public int NoOfSeat { get; set; }
 
-        
+    public string RegNumber { get; set; }
+    public string VehicleType { get; set; }
+    public string Color { get; set; }
+    public int NrOfWheels { get; set; } 
 
 
-    }
+
+
+}
+
 }

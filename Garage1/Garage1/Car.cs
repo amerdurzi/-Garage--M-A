@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace Garage1
 {
-    class Car : Vehicle
+    public class Car : Vehicle
     {
-        public Car(int regNumber, string color, string fuelType, int cylinderVolume, int noOfseat) : base(regNumber, color, fuelType, cylinderVolume, noOfseat)
+        public Car(string vehicleType, string regNumber, string color, int nrfWheels, string fueltype) : base(vehicleType, regNumber, color, nrfWheels)
         {
+            Fueltype = fueltype;
         }
+
+        public string Fueltype { get; set; }  
+
     }
 }

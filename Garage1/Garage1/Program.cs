@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace Garage1
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
+            UI ui = new UI();
+            ui.MainMenu();
         }
     }
 }
