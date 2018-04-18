@@ -11,7 +11,7 @@ namespace Garage1
         private static void Main(string[] args)
         {
             UI ui = new UI();
-            ui.MainMenu();
+            ui.MainMenu();   
         }
     }
 }
